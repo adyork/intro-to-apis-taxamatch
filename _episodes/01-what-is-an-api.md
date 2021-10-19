@@ -47,12 +47,6 @@ REST architecture includes these methods:
 
 Other types of APIs include more methods like PATCH.
 
-## What goes in a Request?
-
-## What goes in a Response?
-
-## Response Codes
-
 ## REST
 
 REST stands for **REpresentational State Transfer**.
@@ -97,6 +91,12 @@ For example you could have an API request that uses a POST method to Create (C) 
 > ~~~
 > {: .language-bash}
 {: .callout}
+
+## What goes in a Request?
+
+## What goes in a Response?
+
+## Response Codes
 
 ## Examine an API
 
