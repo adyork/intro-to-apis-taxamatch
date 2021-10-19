@@ -23,7 +23,7 @@ MLB API: https://appac.github.io/mlb-data-api-docs/
 
 And for APIs that do want you to provide data to them (e.g. [Twitter's API](https://developer.twitter.com/en/docs/twitter-api)), they can require authentication and put limitations on use like limiting the rate you can hit the API.
 
-## APIs for devices
+## APIs are more than just the "web"
 
 In this workshop we will be focusing on web APIs that involve making requests and responses over the internet using HTTP.  
 
@@ -34,9 +34,7 @@ If you are a mobile app developer you use APIs all the time to communicate with 
 For example, if developing a camera app you don't want to write a click handler or the intricacies of the camera hardware. You just want to write code that takes a picture and automatically adds funny emojis to it when you press that button. 
 e.g. existing code "android:onClick" and the Android Camera API https://developer.android.com/guide/topics/media/camera
 
-## Libraries and Frameworks
-
-Code for code
+Libraries and Frameworks can also be APIs that provide helper code for other code.
 
 ## Methods: GET, POST, DELETE, PUT
 
