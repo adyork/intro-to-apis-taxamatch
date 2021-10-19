@@ -24,11 +24,15 @@ What happens whey you copy and paste that url into a web browser?
 
 You can use `curl` to make requests and get responses.
 
+# Programming languages
+
+You will find that any programming language you use will support API calls.  For example, you can do that with the python `requests` library. 
+
 # SDKs
 
 
 
-## Excercise: Pick a number any number.|
+## Excercise: Pick a number any number.
 
->> Pick a method to interact with the numbers API.  Pick a number and make the request.  Then paste the response you get into the workshop collaborative document.
+> Pick a method to interact with the numbers API.  Pick a number and make the request.  Then paste the response you get into the workshop collaborative document.
 {: .callout}
