@@ -25,7 +25,7 @@ And for APIs that do want you to provide data to them (e.g. [Twitter's API](http
 
 ## APIs for devices
 
-In this workshop we will be focusing on web APIs that involve making requests and responses over the internet using HTTP(s) protocols.  
+In this workshop we will be focusing on web APIs that involve making requests and responses over the internet using HTTP.  
 
 But APIs are not just for the web!  APIs to communicate with device hardware is also very common.  
 
