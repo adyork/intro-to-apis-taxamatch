@@ -10,13 +10,63 @@ keypoints:
 - APIs recieve requests and send responses
 ---
 
-## What is an API?
+# What is an API?
+
+API stands for **Application Programming Interface**.
+
+## APIs for devices
+
+In this workshop we will be focusing on web APIs that involve making requests and responses over the internet using HTTP(s) protocols.  
+
+But APIs are not just for the web!  APIs to communicate with device hardware is also very common.  
+
+If you are a mobile app developer you use APIs all the time to communicate with hardware like the camera, gps, etc. But also, APIs can accelerate development time and make your code simpler by provide helper code.  
+
+For example, if developing a camera app you don't want to write a click handler or the intricacies of the camera hardware. You just want to write code that takes a picture and automatically adds funny emojis to it when you press that button. 
+e.g. existing code "android:onClick" and the Android Camera API https://developer.android.com/guide/topics/media/camera
 
 ## What goes in a Request?
 
 ## What goes in a Response?
 
 ## Response Codes
+
+## REST
+
+REST stands for **REpresentational State Transfer**.
+
+## SOAP
+
+SOAP stands for **Simple Object Access Protocol**.
+
+More on REST and SOAP:
+https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
+
+## GraphQL
+
+## CRUD
+
+While not an API itself, people sometimes use this term in conversation about APIs.  It stands for Create, Read, Update, and Delete.  It's a way of manipulating information in your database or data storage.
+
+For example you could have an API request that POSTS
+
+Example:
+
+Facebook has an API that let's you do CRUD operations on messages: https://developers.facebook.com/docs/whatsapp/api/messages (requires Authorization).
+Using that API you make a **POST** call **CREATE** content that is sent as a message (e.g. text, message templates, images, documents and audio).
+
+~~~
+POST /v1/messages
+{
+  "recipient_type": "individual",
+  "to": "whatsapp-id",
+  "type": "text",
+  "text": {
+      "body": "your-message-content"
+  }
+}
+~~~
+{: .language-bash}
 
 ## Examine an API
 
