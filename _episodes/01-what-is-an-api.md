@@ -3,7 +3,7 @@ title: "Intro to APIs"
 teaching: 30
 exercises: 15
 questions:
-- Do you want to learn how to pull from existing data sources to accelerate your own research and development?
+- What is an API and why are they useful?
 objectives:
 - Use APIs to get info!
 keypoints:
