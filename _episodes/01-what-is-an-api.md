@@ -25,6 +25,17 @@ If you are a mobile app developer you use APIs all the time to communicate with 
 For example, if developing a camera app you don't want to write a click handler or the intricacies of the camera hardware. You just want to write code that takes a picture and automatically adds funny emojis to it when you press that button. 
 e.g. existing code "android:onClick" and the Android Camera API https://developer.android.com/guide/topics/media/camera
 
+## Methods: GET, POST, DELETE, PUT
+
+REST architecture includes these methods:
+
+* **GET**	This method helps in offering read-only access to the server resources. 
+* **POST**	This method is implemented for creating a new resource. 
+* **PUT**	This method is implemented for updating an existing resource or creating a fresh one. 
+* **DELETE**	This method is implemented for removing a resource. 
+
+Other types of APIs include more methods like PATCH.
+
 ## What goes in a Request?
 
 ## What goes in a Response?
@@ -34,6 +45,9 @@ e.g. existing code "android:onClick" and the Android Camera API https://develope
 ## REST
 
 REST stands for **REpresentational State Transfer**.
+
+More resources:
+https://www.w3schools.in/restful-web-services/intro/#The_REST_Architecture
 
 ## SOAP
 
@@ -46,9 +60,13 @@ https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
 
 ## CRUD
 
-While not an API itself, people sometimes use this term in conversation about APIs.  It stands for Create, Read, Update, and Delete.  It's a way of manipulating information in your database or data storage.
+While not an API itself, people sometimes use this term in conversation about APIs.  It stands for Create, Read, Update, and Delete.  It's terminology to describe types of operations that manipulating information in your database or data storage.
 
-For example you could have an API request that POSTS
+For example you could have an API request that uses a POST method to Create (C) data in your server's database.
+* **GET**	 is the R in CRUD.  
+* **POST**	 is the C in CRUD. 
+* **PUT**	 is the U in CRUD.
+* **DELETE**	is the D in CRUD.
 
 Example:
 
