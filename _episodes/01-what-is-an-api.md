@@ -12,7 +12,16 @@ keypoints:
 
 # What is an API?
 
-API stands for **Application Programming Interface**.
+API stands for **Application Programming Interface**.  APIs are the glue that hold the technology universe together.  They are a communication tool that can be used to pass information to and from different kinds of devices and hardware.  
+
+There are APIs that can be used over the web, directly between local devices, or just between different code all on your computer.  It can be written in any language, and may use a number of protocols.  All that sounds very nebulous.  But at the heart of it, APIs are that versitile.  It's the specific implementations that do particular things that narrow the scope.
+
+Before we get down to the details, let's look at a restaurant concept example.
+
+APIs provide an abstraction layer that spares you the details of a database or server implementation when all you want is to work with information.  For example, say you want the latest red sox scores.  You don't want to know how MLB stores that information in their database, what kind of database it is, or how it is managed.  You just want the information.  In fact, MLB probably doesn't want you mucking around in their database to begin with!  
+MLB API: https://appac.github.io/mlb-data-api-docs/
+
+And for APIs that do want you to provide data to them (e.g. [Twitter's API](https://developer.twitter.com/en/docs/twitter-api)), they can require authentication and put limitations on use like limiting the rate you can hit the API.
 
 ## APIs for devices
 
@@ -24,6 +33,10 @@ If you are a mobile app developer you use APIs all the time to communicate with 
 
 For example, if developing a camera app you don't want to write a click handler or the intricacies of the camera hardware. You just want to write code that takes a picture and automatically adds funny emojis to it when you press that button. 
 e.g. existing code "android:onClick" and the Android Camera API https://developer.android.com/guide/topics/media/camera
+
+## Libraries and Frameworks
+
+Code for code
 
 ## Methods: GET, POST, DELETE, PUT
 
