@@ -68,23 +68,24 @@ For example you could have an API request that uses a POST method to Create (C) 
 * **PUT**	 is the U in CRUD.
 * **DELETE**	is the D in CRUD.
 
-Example:
-
-Facebook has an API that let's you do CRUD operations on messages: https://developers.facebook.com/docs/whatsapp/api/messages (requires Authorization).
-Using that API you make a **POST** call **CREATE** content that is sent as a message (e.g. text, message templates, images, documents and audio).
-
-~~~
-POST /v1/messages
-{
-  "recipient_type": "individual",
-  "to": "whatsapp-id",
-  "type": "text",
-  "text": {
-      "body": "your-message-content"
-  }
-}
-~~~
-{: .language-bash}
+> Example:
+>
+> Facebook has an API that let's you do CRUD operations on messages: https://developers.facebook.com/docs/whatsapp/api/messages (requires Authorization).
+> Using that API you make a **POST** call **CREATE** content that is sent as a message (e.g. text, message templates, images, documents and audio).
+> 
+> ~~~
+> POST /v1/messages
+> {
+>   "recipient_type": "individual",
+>   "to": "whatsapp-id",
+>   "type": "text",
+>   "text": {
+>       "body": "your-message-content"
+>   }
+> }
+> ~~~
+> {: .language-bash}
+{: .callout}
 
 ## Examine an API
 
