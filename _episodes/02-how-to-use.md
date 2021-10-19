@@ -34,12 +34,6 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 ~~~
 {: .output}
 
-# Programming languages
-
-You will find that any programming language you use will support API calls.  For example, you can do that with the python `requests` library. 
-
-# SDKs
-
 
 
 ## Excercise: Pick a number any number.
