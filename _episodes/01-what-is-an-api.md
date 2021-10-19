@@ -12,6 +12,13 @@ keypoints:
 
 ## What is an API?
 
+## What goes in a Request?
+
+## What goes in a Response?
+
+## Response Codes
+
+## Examine an API
 
 ~~~
 $ curl http://numbersapi.com/42
