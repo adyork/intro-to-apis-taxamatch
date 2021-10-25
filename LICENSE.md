@@ -3,11 +3,13 @@ layout: page
 title: "Licenses"
 root: .
 ---
-
 ## Instructional Material
 
-All Software Carpentry, Data Carpentry, and Library Carpentry instructional material is made available under the [Creative Commons Attribution
-license][cc-by-human]. The following is a human-readable summary of
+This BCO-DMO lesson was constructed in part with a template derived from work that is Copyright © Software Carpentry (http://software-carpentry.org/).
+
+This lesson and all Software, Data, and Library Carpentry instructional material is
+made available under the [Creative Commons Attribution
+license][cc-by-human] . The following is a human-readable summary of
 (and not a substitute for) the [full legal text of the CC BY 4.0
 license][cc-by-legal].
 
@@ -48,7 +50,7 @@ Notices:
 ## Software
 
 Except where otherwise noted, the example programs and other software
-provided by Software, Data and Library Carpentry are made available under the
+provided by BCO-DMO, Software Carpentry, and Data Carpentry are made available under the
 [OSI][osi]-approved
 [MIT license][mit-license].
 
