@@ -74,15 +74,54 @@ Image from `postman.com`
 
 # Languages: Python
 
+Let's look at an example of making an API call to the Random Fox API using python's `requests` library.
+
+You can follow along in this python notebook: https://gist.github.com/adyork/1219915286eafa4cefa0122ea98d28dc
+
+You can also click the "Open in Colab" badge at the top to run the notebook.  You can make are run changes in colab without affecting our workshop example.
+
 ## SDK
+
+**SDK** stands for "software development kit."  They are toolkits for specific programming languages that wrap APIs and often other libraries for easier development. 
+
+Example python SDK "erddapy" for working with the ERDDAP API.  Note that erddapy has a helpful method called `.to_pandas()` that would have take a few steps to do if you used `requests` to make the API call instead.
+
+~~~
+from erddapy import ERDDAP
+
+e = ERDDAP(
+  server="https://gliders.ioos.us/erddap",
+  protocol="tabledap",
+)
+
+e.response = "csv"
+e.dataset_id = "whoi_406-20160902T1700"
+e.constraints = {
+    "time>=": "2016-07-10T00:00:00Z",
+    "time<=": "2017-02-10T00:00:00Z",
+    "latitude>=": 38.0,
+    "latitude<=": 41.0,
+    "longitude>=": -72.0,
+    "longitude<=": -69.0,
+}
+e.variables = [
+    "depth",
+    "latitude",
+    "longitude",
+    "salinity",
+    "temperature",
+    "time",
+]
+
+df = e.to_pandas()
+~~~
+{: .language-bash}
 
 ### working with response data
 
 While working with response data, you may be taking json and putting it into python dicts and data frames.  Let's briefly review these types.
 
 See "dicts" from "Introduction to the Web and Online APIs" https://colinsauze.github.io/web-novice/03-dicts/index.html
-
-
 
 ## Authentication and identification
 
