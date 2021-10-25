@@ -191,7 +191,9 @@ REST Constraints:
 5. Layered system
 6. Code on demand (optional)
 
-More on constraints: https://restfulapi.net/rest-architectural-constraints/
+More on constraints: 
+* https://restfulapi.net/rest-architectural-constraints/
+
 
 ### Methods: GET, POST, DELETE, PUT
 
@@ -204,9 +206,11 @@ Methods in REST for accessing and manipulating data:
 * **PUT**	This method is implemented for updating an existing resource or creating a fresh one. 
 * **DELETE**	This method is implemented for removing a resource. 
 
-Other types of APIs include more methods like PATCH.
+Other types of APIs include more methods like PATCH which only updates a portion of a specific resource.
 
-More about RESTful design at: https://restfulapi.net/rest-api-design-tutorial-with-example/
+More about RESTful design at: 
+* https://restfulapi.net/rest-api-design-tutorial-with-example/
+* https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
 
 ### Resource naming and URIs
 
@@ -218,14 +222,17 @@ e.g. for dataa about a particular dog:
 e.g. data for a trick a particular dog can do:
 `/dog/{dogId}/trick/{trickId}`
 
-More on REST naming and URI conventions: https://restfulapi.net/resource-naming/
+More on REST naming and URI conventions: 
+* https://restfulapi.net/resource-naming/
+* https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
 
 ## SOAP
 
-SOAP stands for **Simple Object Access Protocol**.
+SOAP stands for **Simple Object Access Protocol**.  These were more widely popular before REST gained popularity.
 
 More on REST and SOAP:
-https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
+* https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
+* https://en.wikipedia.org/wiki/SOAP
 
 ## CRUD
 
