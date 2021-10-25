@@ -172,3 +172,76 @@ example can be found [on GitHub][newton-docs].
 >> it in your software.
 > {: .solution} 
 {: .challenge}
+
+
+# Types of APIs
+
+## REST
+
+REST stands for **REpresentational State Transfer**.
+
+More resources:
+https://www.w3schools.in/restful-web-services/intro/#The_REST_Architecture
+
+
+### Methods: GET, POST, DELETE, PUT
+
+REST architecture includes these methods:
+
+* **GET**	This method helps in offering read-only access to the server resources. 
+* **POST**	This method is implemented for creating a new resource. 
+* **PUT**	This method is implemented for updating an existing resource or creating a fresh one. 
+* **DELETE**	This method is implemented for removing a resource. 
+
+Other types of APIs include more methods like PATCH.
+
+## SOAP
+
+SOAP stands for **Simple Object Access Protocol**.
+
+More on REST and SOAP:
+https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
+
+## CRUD
+
+While not an API itself, people sometimes use this term in conversation about APIs.  It stands for Create, Read, Update, and Delete.  It's terminology to describe types of operations that manipulating information in your database or data storage.
+
+For example you could have an API request that uses a POST method to Create (C) data in your server's database.
+* **GET**	 is the R in CRUD.  
+* **POST**	 is the C in CRUD. 
+* **PUT**	 is the U in CRUD.
+* **DELETE**	is the D in CRUD.
+
+> Example:
+>
+> Facebook has an API that let's you do CRUD operations on messages: https://developers.facebook.com/docs/whatsapp/api/messages (requires Authorization).
+> Using that API you make a **POST** call **CREATE** content that is sent as a message (e.g. text, message templates, images, documents and audio).
+> 
+> ~~~
+> POST /v1/messages
+> {
+>   "recipient_type": "individual",
+>   "to": "whatsapp-id",
+>   "type": "text",
+>   "text": {
+>       "body": "your-message-content"
+>   }
+> }
+> ~~~
+> {: .language-bash}
+{: .callout}
+
+## GraphQL
+
+[GraphQL](https://graphql.org/) is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools. _from https://graphql.org/_
+
+Featured highlights:
+ 
+* Aggregate data from multiple UI components.
+* Create a representation of your data that feels familiar and natural (a graph).
+* Ensure that all of your data is statically typed and these types inform what queries the schema supports.
+* Reduce the need for breaking changes, but utilize a built-in mechanism for deprecations when you need to.
+* Access to a powerful tooling ecosystem with GUIs, editor integrations, code generation, linting, analytics, and more.
+
+GraphQL does not consider themselves a replacement for REST but an alternative.  You can also implement both by wrapping an existing REST API.  You will see many APIs provide documentation and examples for using GraphQL in addition to REST.
+
