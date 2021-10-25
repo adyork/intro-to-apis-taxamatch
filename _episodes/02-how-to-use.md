@@ -19,7 +19,8 @@ Let's take a url from the Numbers API
 
 What happens whey you copy and paste that url into a web browser?  
 
-> Live Demo: Looking at the Random Fox API with browser "developer tools"
+> # Live Demo:
+> Looking at the Random Fox API with browser "developer tools"
 > https://randomfox.ca/floof/
 {: .callout}
 
