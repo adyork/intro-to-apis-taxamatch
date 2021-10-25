@@ -36,6 +36,8 @@ Some APIs will let you ask for a particular type to return data in.  But in any 
 
 You can use `curl` on command line to make requests and get responses.
 
+
+
 ~~~
 curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificnames[]=Gadus%20morha&marine_only=true" -H "accept: */*"
 ~~~
@@ -64,24 +66,25 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 > > November 13th is the day in 1965 that the SS Yarmouth Castle burns and sinks 60 miles off Nassau with the loss of 90 lives.
 > > ~~~
 > > {: .language-bash}
-> > 
 > > ~~~
-> > [ site for site in sitelist if site["name"] == "Cardiff"] 
+> > November 13th is the day in 1965 that the SS Yarmouth Castle burns and sinks 60 miles off Nassau with the loss of 90 lives.
+> > ~~~
+> >{: .output}
+> >
+> > ~~~
+> > import requests
+> >
+> > response = requests.get('http://numbersapi.com/11/13/date')
+> > print(response.text)
 > > ~~~
 > > {: .language-python}
+> > ~~~
+> > November 13th is the day in 1956 that the United States Supreme Court declares Alabama laws requiring segregated buses illegal, thus ending the Montgomery Bus Boycott.
+> > ~~~
+> >{: .output}
 > {: .solution}
 {: .challenge}
 
-# Postman
-
-[Postman](https://www.postman.com/) is "an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration..."  
-
-It's great for testing out API calls and saving ones you want to return to.  And if you get into designing your own APIs it can help you manage and document that as well.
-
-It is available for free for use on the web or as an installed program on Windows/Mac/Linux.  Though there are paid tiers that offer more tools for teams and businesses.
-
-![Postman screenshot](https://st-ar.cdn.postman.com/images/homepage-hero-light_1260w-54f65d9b6fd131400930c66cea3ec522.png)
-Image from `postman.com`
 
 # Languages: Python
 
@@ -128,11 +131,16 @@ df = e.to_pandas()
 ~~~
 {: .language-bash}
 
-### working with response data
+# Postman
 
-While working with response data, you may be taking json and putting it into python dicts and data frames.  Let's briefly review these types.
+[Postman](https://www.postman.com/) is "an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration..."  
 
-See "dicts" from "Introduction to the Web and Online APIs" https://colinsauze.github.io/web-novice/03-dicts/index.html
+It's great for testing out API calls and saving ones you want to return to.  And if you get into designing your own APIs it can help you manage and document that as well.
+
+It is available for free for use on the web or as an installed program on Windows/Mac/Linux.  Though there are paid tiers that offer more tools for teams and businesses.
+
+![Postman screenshot](https://st-ar.cdn.postman.com/images/homepage-hero-light_1260w-54f65d9b6fd131400930c66cea3ec522.png)
+Image from `postman.com`
 
 ## Authentication and identification
 
