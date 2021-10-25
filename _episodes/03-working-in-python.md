@@ -16,14 +16,14 @@ Now how do we make API requests in python?  Let's explore some live notebooks:
 
 Let's go through another example using the ERDDAP API to get a data table as csv and get it into a pandas data frame:
 
-https://gist.github.com/adyork/966fdd2bd596336047dcf005255014d1
+[Example notebook link](https://gist.github.com/adyork/966fdd2bd596336047dcf005255014d1)
 
 
 ## Example with ERRDAP: json to data frame
 
 Let's go through another example using the ERDDAP API to get the same data as the last example. Except this time we will revieve the data as json and get it into a data frame.
 
-https://gist.github.com/adyork/1a4840324f8ce7e48b018cde5f44e836
+[Example notebook link](https://gist.github.com/adyork/1a4840324f8ce7e48b018cde5f44e836)
 
 
 ## Working with dictionaries
