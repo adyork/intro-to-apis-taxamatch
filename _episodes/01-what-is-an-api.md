@@ -112,6 +112,10 @@ REST Constraints:
 More on constraints: 
 * https://restfulapi.net/rest-architectural-constraints/
 
+More about RESTful design at: 
+* https://restfulapi.net/rest-api-design-tutorial-with-example/
+* https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
+* https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
 
 ### HTTP Methods: GET, POST, DELETE, PUT
 
@@ -127,10 +131,6 @@ HTTP Methods for accessing and manipulating data (resources):
 * **DELETE**	This method is implemented for removing a resource. 
 
 Other types of APIs include more methods like PATCH which only updates a portion of a specific resource.
-
-More about RESTful design at: 
-* https://restfulapi.net/rest-api-design-tutorial-with-example/
-* https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
 
 ## CRUD
 
@@ -174,15 +174,18 @@ More info at:  https://frontend.turing.edu/lessons/module-3/rest-architecture-an
 
 Uniform Resource Identifiers (URIs) are used to address resources in REST using endpoints.
 
-e.g. for data about a particular dog:
+e.g. endpoint for data about all dogs
+`/dogs`
+
+e.g. endpoint for data about a particular dog:
 `/dog/{dogId}`
 
-e.g. data for a trick a particular dog can do:
+e.g. endpoint for data for a trick a particular dog can do:
 `/dog/{dogId}/trick/{trickId}`
 
-More on REST naming and URI conventions: 
-* https://restfulapi.net/resource-naming/
-* https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
+Notice that name collections with have plural nouns (e.g. dogs vs dog)
+
+Notice that endpoints use nouns not verbs.  The HTTP method will dictate the action so instead of `/createDog` the endpoint would be '/dog' and the HTTP method used like 'POST' will dictate if a new dog should be created.
 
 ## SOAP
 
