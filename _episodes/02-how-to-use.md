@@ -32,7 +32,7 @@ Some APIs will let you ask for a particular type to return data in.  But in any 
 
 # Command line
 
-You can use `curl` to make requests and get responses.
+You can use `curl` on command line to make requests and get responses.
 
 ~~~
 curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificnames[]=Gadus%20morha&marine_only=true" -H "accept: */*"
@@ -45,10 +45,11 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 {: .output}
 
 
+## Excercise: Get a Fact about your birthday
 
-## Excercise: Pick a number any number.
-
-> Pick a method to interact with the numbers API.  Pick a number and make the request.  Then paste the response you get into the workshop collaborative document.
+> Pick a method to interact with the numbers API (browser, command line, python).  
+> Look at the Numbers API documenation https://numbersapi.com/.  
+> Then paste the response you get into the workshop chat.
 {: .callout}
 
 
