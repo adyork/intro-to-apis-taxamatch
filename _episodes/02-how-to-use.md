@@ -50,14 +50,25 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 # Excercise: Get a Fact about your birthday
 
 > * Look at the Numbers API documenation https://numbersapi.com/.  
-> * Pick a method to interact with the numbers API (browser, command line, python).  
+> * Pick a method to interact with the numbers API (browser, command line, etc).  
 > * Make a request to the Numbers API.
 > * Paste the response you get into the workshop chat.
 >
 > > ## Answer
-> >
-> > This matches `France`, `French`, in addition to the misspellings `Frence`, and `Franch`. It would also find strings where there were characters to either side of the pattern such as `France's`, `in French`, or `French-fried`.
-> >
+> > If your birthday is November 13th, pasete URL `http://numbersapi.com/11/13/date` into a web browser.
+> > 
+> > Returned random fact: "November 13th is the day in 1851 that the Denny Party lands at Alki Point, before moving to the other side of Elliot Bay to what would become Seattle, Washington."
+> > 
+> > ~~~
+> > curl http://numbersapi.com/11/13/date
+> > November 13th is the day in 1965 that the SS Yarmouth Castle burns and sinks 60 miles off Nassau with the loss of 90 lives.
+> > ~~~
+> > {: .language-bash}
+> > 
+> > ~~~
+> > [ site for site in sitelist if site["name"] == "Cardiff"] 
+> > ~~~
+> > {: .language-python}
 > {: .solution}
 {: .challenge}
 
@@ -84,7 +95,7 @@ You can also click the "Open in Colab" badge at the top to run the notebook.  Yo
 
 **SDK** stands for "software development kit."  They are toolkits for specific programming languages that wrap APIs and often other libraries for easier development. 
 
-Example python SDK "erddapy" for working with the ERDDAP API.  Note that erddapy has a helpful method called `.to_pandas()` that would have take a few steps to do if you used `requests` to make the API call instead.
+Example python SDK [erddapy](https://ioos.github.io/erddapy/) for working with the ERDDAP API.  Note that erddapy has a helpful method called `.to_pandas()` that would have take a few steps to do if you used `requests` to make the API call instead.
 
 ~~~
 from erddapy import ERDDAP
