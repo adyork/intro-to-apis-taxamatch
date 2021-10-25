@@ -40,3 +40,13 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 
 > Pick a method to interact with the numbers API.  Pick a number and make the request.  Then paste the response you get into the workshop collaborative document.
 {: .callout}
+
+## Languages: Python
+
+### SDK
+
+### working with response data
+
+While working with response data, you may be taking json and putting it into python dicts and data frames.  Let's briefly review these types.
+
+See "dicts" from "Introduction to the Web and Online APIs" https://colinsauze.github.io/web-novice/03-dicts/index.html
