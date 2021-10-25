@@ -3,9 +3,7 @@ title: "Intro to APIs"
 teaching: 30
 exercises: 10
 questions:
-- What is an API and why are they useful?
-objectives:
-- Understand what APIs are and demystify terms like REST, CRUD, and SOAP.
+- What is an API and why are they useful? Understand what APIs are and demystify terms like REST, CRUD, and SOAP.
 keypoints:
 - API stands for "Application Programming Interface"
 - APIs can be implemented in a variety of ways not just over "the web."
