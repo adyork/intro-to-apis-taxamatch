@@ -10,24 +10,7 @@ keypoints:
 ---
 
 
-The endpoints an API offers, and what format it will give its responses in, will
-generally be listed in the API's documentation. 
-
-For example, the World Register of Marine Species REST API: http://marinespecies.org/rest/
-
-Example: 
-
-~~~
-curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificnames[]=Gadus%20morha&marine_only=true" -H "accept: */*"
-~~~
-{: .language-bash}
-
-~~~
-[[{"AphiaID":126436,"url":"http:\/\/marinespecies.org\/aphia.php?p=taxdetails&id=126436","scientificname":"Gadus morhua","authority":"Linnaeus, 1758","status":"accepted","unacceptreason":null,"taxonRankID":220,"rank":"Species","valid_AphiaID":126436,"valid_name":"Gadus morhua","valid_authority":"Linnaeus, 1758","parentNameUsageID":125732,"kingdom":"Animalia","phylum":"Chordata","class":"Actinopteri","order":"Gadiformes","family":"Gadidae","genus":"Gadus","citation":"Froese, R. and D. Pauly. Editors. (2021). FishBase. Gadus morhua Linnaeus, 1758. Accessed through: World Register of Marine Species at: http:\/\/marinespecies.org\/aphia.php?p=taxdetails&id=126436 on 2021-10-19","lsid":"urn:lsid:marinespecies.org:taxname:126436","isMarine":1,"isBrackish":1,"isFreshwater":0,"isTerrestrial":0,"isExtinct":null,"match_type":"near_1","modified":"2008-01-15T17:27:08.177Z"}]]y
-~~~
-{: .output}
-
-Now how do we make queries like this in python?  Let's explore a live notebook:
+Now how do we make API requests in python?  Let's explore some live notebooks:
 
 ## Example with ERRDAP: csv to data frame
 
