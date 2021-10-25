@@ -14,9 +14,17 @@ keypoints:
 
 API stands for **Application Programming Interface**.  APIs are the glue that hold the technology universe together.  They are a communication tool that can be used to pass information to and from different kinds of devices and hardware.  
 
-There are APIs that can be used over the web, directly between local devices, or just between different code all on your computer.  It can be written in any language, and may use a number of protocols.  All that sounds very nebulous.  But at the heart of it, APIs are that versitile.  It's the specific implementations that do particular things that narrow the scope.
+There are APIs that can be used over the web, directly between local devices, or just between different code all on your computer.  It can be written in any language, and may use a number of protocols.  All that sounds very nebulous.  But at the heart of it, APIs are that versitile.  It's the specific implementations that do particular things that narrow the scope. Before we get down to the details, let's look at a restaurant concept example.
 
-Before we get down to the details, let's look at a restaurant concept example.
+> ### Concept: Restaurant as an API
+> 
+> * You request an item listed the menu.  
+> * Your order is recieved by the kitchen.
+> * The kitchen performs all kinds of operations needed to make your food.
+> * Then then you get a response.  Your food is either delivered to your table or you get no food if they couldn't make your request. They can't make your food if you ordered something that isn't on the menu, you didn't ask for it correctly, or if equiptement failure prevented them from making your requested item.
+>
+> API requests have to be made in specific ways so **referring to Documentation** is very important.
+{: .callout}
 
 APIs provide an abstraction layer that spares you the details of a database or server implementation when all you want is to work with information.  For example, say you want the latest red sox scores.  You don't want to know how MLB stores that information in their database, what kind of database it is, or how it is managed.  You just want the information.  In fact, MLB probably doesn't want you mucking around in their database to begin with!  
 MLB API: https://appac.github.io/mlb-data-api-docs/
