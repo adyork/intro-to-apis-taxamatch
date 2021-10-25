@@ -1,19 +1,22 @@
 ---
 title: "Intro to APIs"
 teaching: 30
-exercises: 15
+exercises: 10
 questions:
 - What is an API and why are they useful?
 objectives:
-- Use APIs to get info!
+- Understand what APIs are and demystify terms like REST, CRUD, and SOAP.
 keypoints:
-- APIs recieve requests and send responses
+- API stands for "Application Programming Interface"
+- APIs can be implemented in a variety of ways not just over "the web."
+- APIs use requests and responses to send and recieve data.
+- APIs can be designed differently but there are special types like REST that conform to certain conditions.
 
 ---
 
 # What is an API?
 
-API stands for **Application Programming Interface**.  APIs are the glue that hold the technology universe together.  They are a communication tool that can be used to pass information to and from different kinds of devices and hardware.  
+API stands for **Application Programming Interface**.  APIs are the glue that hold the technology universe together.  They are a communication tool that can be used to pass information to and from different kinds of devices and hardware through requests and responses.  
 
 There are APIs that can be used over the web, directly between local devices, or just between different code all on your computer.  It can be written in any language, and may use a number of protocols.  All that sounds very nebulous.  But at the heart of it, APIs are that versitile.  It's the specific implementations that do particular things that narrow the scope. Before we get down to the details, let's look at a restaurant concept example.
 
