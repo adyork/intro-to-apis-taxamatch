@@ -14,10 +14,20 @@ keypoints:
 
 # A web browser
 
-Let's take that url from the Numbers API 
+Let's take a url from the Numbers API 
 `http://numbersapi.com/42`
 
 What happens whey you copy and paste that url into a web browser?  
+
+> Live Demo: Looking at the Random Fox API with browser "developer tools"
+> https://randomfox.ca/floof/
+{: .callout}
+
+Did you notice that the type of data returned by the Number's API and Random Fox API looked different? That's right, the content type they returned is different.  
+* **Numbers API** returned: `Content-Type` : `text/plain; charset=utf-8`
+* The **Random Fox API** returned: `Content-Type` : `application/json`
+
+Some APIs will let you ask for a particular type to return data in.  But in any case, pay attention to content type because you will need to write your code differently for different types.  We will look at this in more detail when working with python.
 
 
 # Command line
