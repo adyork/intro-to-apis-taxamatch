@@ -23,6 +23,9 @@ MLB API: https://appac.github.io/mlb-data-api-docs/
 
 And for APIs that do want you to provide data to them (e.g. [Twitter's API](https://developer.twitter.com/en/docs/twitter-api)), they can require authentication and put limitations on use like limiting the rate you can hit the API.
 
+> Tip: **Finding APIs**. With so many APIs out there how do you find what you are looking for? It is sometimes as easy as a web search using "API" in your keywords.  But there are other resources too like [ProgrammableWeb's API Directory](https://www.programmableweb.com/category/all/apis).
+
+
 ## APIs are more than just the "web"
 
 In this workshop we will be focusing on web APIs that involve making requests and responses over the internet using HTTP.  
