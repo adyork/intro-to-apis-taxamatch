@@ -5,7 +5,7 @@ root: .
 ---
 ## Instructional Material
 
-This BCO-DMO lesson was constructed in part with a template derived from work that is Copyright © Software Carpentry (http://software-carpentry.org/).  
+This lesson was constructed in part with a template derived from work that is Copyright © Software Carpentry (http://software-carpentry.org/).  
 
 Portions were copied and adapted from alpha-lesson "Introduction to the Web and Online APIs"
 * https://edbennett.github.io/web-novice/ and https://colinsauze.github.io/web-novice/
