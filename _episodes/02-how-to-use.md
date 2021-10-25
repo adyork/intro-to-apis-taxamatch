@@ -3,7 +3,7 @@ title: How can I use an API?
 teaching: 30
 exercises: 15
 questions:
-- How can you use regular expressions to match and extract strings?
+- How can I use APIs and where?
 objectives:
 - Take a look at a variety of ways to make responses and get requests.
 keypoints:
