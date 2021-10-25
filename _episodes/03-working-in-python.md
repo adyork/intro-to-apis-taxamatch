@@ -1,3 +1,48 @@
+---
+title: Working in Python
+teaching: 30
+exercises: 15
+questions:
+- What does it look like to make API requests in python and work with data in the responses?  
+objectives:
+- Take a look at a variety of ways to make responses and get requests of different types.
+keypoints:
+---
+
+
+The endpoints an API offers, and what format it will give its responses in, will
+generally be listed in the API's documentation. 
+
+For example, the World Register of Marine Species REST API: http://marinespecies.org/rest/
+
+Example: 
+
+~~~
+curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificnames[]=Gadus%20morha&marine_only=true" -H "accept: */*"
+~~~
+{: .language-bash}
+
+~~~
+[[{"AphiaID":126436,"url":"http:\/\/marinespecies.org\/aphia.php?p=taxdetails&id=126436","scientificname":"Gadus morhua","authority":"Linnaeus, 1758","status":"accepted","unacceptreason":null,"taxonRankID":220,"rank":"Species","valid_AphiaID":126436,"valid_name":"Gadus morhua","valid_authority":"Linnaeus, 1758","parentNameUsageID":125732,"kingdom":"Animalia","phylum":"Chordata","class":"Actinopteri","order":"Gadiformes","family":"Gadidae","genus":"Gadus","citation":"Froese, R. and D. Pauly. Editors. (2021). FishBase. Gadus morhua Linnaeus, 1758. Accessed through: World Register of Marine Species at: http:\/\/marinespecies.org\/aphia.php?p=taxdetails&id=126436 on 2021-10-19","lsid":"urn:lsid:marinespecies.org:taxname:126436","isMarine":1,"isBrackish":1,"isFreshwater":0,"isTerrestrial":0,"isExtinct":null,"match_type":"near_1","modified":"2008-01-15T17:27:08.177Z"}]]y
+~~~
+{: .output}
+
+Now how do we make queries like this in python?  Let's explore a live notebook:
+
+## Example with ERRDAP: csv to data frame
+
+Let's go through another example using the ERDDAP API to get a data table as csv and get it into a pandas data frame:
+
+https://gist.github.com/adyork/966fdd2bd596336047dcf005255014d1
+
+
+## Example with ERRDAP: json to data frame
+
+Let's go through another example using the ERDDAP API to get the same data as the last example. Except this time we will revieve the data as json and get it into a data frame.
+
+https://gist.github.com/adyork/1a4840324f8ce7e48b018cde5f44e836
+
+
 
 ## Working with dictionaries
 
