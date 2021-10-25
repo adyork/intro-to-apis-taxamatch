@@ -178,15 +178,26 @@ example can be found [on GitHub][newton-docs].
 
 ## REST
 
-REST stands for **REpresentational State Transfer**.
+REST stands for **REpresentational State Transfer**.  REST is a set of guidelines on how to architect a network-connected software system.  It is not a specification.
 
-More resources:
-https://www.w3schools.in/restful-web-services/intro/#The_REST_Architecture
+An API can be called a "REST API" if it conforms to the REST architectural style.
 
+REST Constraints:
+
+1. Uniform interface
+2. Client–server
+3. Stateless
+4. Cacheable
+5. Layered system
+6. Code on demand (optional)
+
+More on constraints: https://restfulapi.net/rest-architectural-constraints/
 
 ### Methods: GET, POST, DELETE, PUT
 
-REST architecture includes these methods:
+In REST primary data is called a "resource." 
+
+Methods in REST for accessing and manipulating data:
 
 * **GET**	This method helps in offering read-only access to the server resources. 
 * **POST**	This method is implemented for creating a new resource. 
@@ -194,6 +205,20 @@ REST architecture includes these methods:
 * **DELETE**	This method is implemented for removing a resource. 
 
 Other types of APIs include more methods like PATCH.
+
+More about RESTful design at: https://restfulapi.net/rest-api-design-tutorial-with-example/
+
+### Resource naming and URIs
+
+Uniform Resource Identifiers (URIs) are used to address resources in REST.
+
+e.g. for dataa about a particular dog:
+`/dog/{dogId}`
+
+e.g. data for a trick a particular dog can do:
+`/dog/{dogId}/trick/{trickId}`
+
+More on REST naming and URI conventions: https://restfulapi.net/resource-naming/
 
 ## SOAP
 
