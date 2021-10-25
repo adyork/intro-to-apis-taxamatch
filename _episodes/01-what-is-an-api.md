@@ -243,5 +243,7 @@ Featured highlights:
 * Reduce the need for breaking changes, but utilize a built-in mechanism for deprecations when you need to.
 * Access to a powerful tooling ecosystem with GUIs, editor integrations, code generation, linting, analytics, and more.
 
+![graphql_example](../fig/graphql.png)
+
 GraphQL does not consider themselves a replacement for REST but an alternative.  You can also implement both by wrapping an existing REST API.  You will see many APIs provide documentation and examples for using GraphQL in addition to REST.
 
