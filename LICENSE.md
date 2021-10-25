@@ -10,7 +10,7 @@ This lesson was constructed in part with a template derived from work that is Co
 Portions were copied and adapted from alpha-lesson "Introduction to the Web and Online APIs"
 * https://edbennett.github.io/web-novice/ and https://colinsauze.github.io/web-novice/
 
-This lesson and all Software, Data, and Library Carpentry instructional material is
+This lesson and all Software and materials are
 made available under the [Creative Commons Attribution
 license][cc-by-human] . The following is a human-readable summary of
 (and not a substitute for) the [full legal text of the CC BY 4.0
