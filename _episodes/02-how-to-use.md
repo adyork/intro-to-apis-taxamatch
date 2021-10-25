@@ -60,11 +60,14 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 
 # Postman
 
-[Postman](https://www.postman.com/) is "an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration..."  It's great for testing out API calls for development.  And if you get into designing your own APIs it can help you manage and document that as well.
+[Postman](https://www.postman.com/) is "an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration..."  
+
+It's great for testing out API calls and saving ones you want to return to.  And if you get into designing your own APIs it can help you manage and document that as well.
 
 It is available for free for use on the web or as an installed program on Windows/Mac/Linux.  Though there are paid tiers that offer more tools for teams and businesses.
 
 ![Postman screenshot](https://st-ar.cdn.postman.com/images/homepage-hero-light_1260w-54f65d9b6fd131400930c66cea3ec522.png)
+Image from `postman.com`
 
 # Languages: Python
 
