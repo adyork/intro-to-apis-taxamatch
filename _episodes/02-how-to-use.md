@@ -49,9 +49,10 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 
 # Excercise: Get a Fact about your birthday
 
-> * Pick a method to interact with the numbers API (browser, command line, python).  
 > * Look at the Numbers API documenation https://numbersapi.com/.  
-> * Then paste the response you get into the workshop chat.
+> * Pick a method to interact with the numbers API (browser, command line, python).  
+> * Make a request to the Numbers API.
+> * Paste the response you get into the workshop chat.
 >
 > > ## Answer
 > >
