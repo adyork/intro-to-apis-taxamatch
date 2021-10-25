@@ -92,96 +92,11 @@ HTTP, as the response body of a request is a string of either characters or of
 bytes. (Byte strings don't translate well between languages, so are usually
 avoided, except for specific portable formats such as images.)
 
-However, many useful functions need to return something other than character
-strings. For example, you might want to return a list, or an array, or a set of
-related data. Let's look at another example of a web API and see how this can be
-handled. [Newton][newton] is a web API for advanced mathematics. One thing it
-can do is factorization:
-
-~~~
-$ curl https://newton.now.sh/api/v2/factor/x^2-1
-~~~
-{: .language-bash}
-
-~~~
-{"operation":"factor","expression":"x^2-1","result":"(x - 1) (x + 1)"}
-~~~
-{: .output}
-
-Two things have changed. Firstly, now instead of `/`, we are specifying that we
-want to use the `factor` endpoint provided by the `v2` version of the API. This
-is a very common way of structuring APIs: firstly a version, and then one or
-more levels of endpoints to specify what function you would like the API to
-perform.
-
-Secondly, rather than a plain text response, we get a data structure. This is
-still encoded as plain text (because HTTP can't natively transmit much else),
-but we can't use the text directly&mdash;instead, we need to parse it, first.
-The syntax used here is the most common format for modern web APIs, and is
-called JSON (pronounced like the name "Jason"; short for JavaScript Object
-Notation). (You may also encounter older or more old-fashioned APIs that instead
-use XML, the eXtensible Markup Language.) We can see that this response includes
-three names, or _keys_ (`"operation"`, `"expression"`, and `"result"`), and
-three associated _values_ (`"factor"`, `"x^2-1"`, and `"(x - 1) ( x + 1)"`,
-respectively).
-
-`factor` is not the only thing that Newton can do. Let's try a different
-endpoint, for integration.
-
-~~~
-$ curl https://newton.now.sh/api/v2/integrate/x^2-1
-~~~
-{: .language-bash}
-
-~~~
-{"operation":"integrate","expression":"x^2-1","result":"1/3 x^3 - x"}
-~~~
-{: .output}
-
-In this case Newton correctly tells us that the `"result"` of this integration
-is `"1/3 x^3 - x"`.
-
-The endpoints an API offers, and what format it will give its responses in, will
-generally be listed in the API's documentation. Newton's documentation for
-example can be found [on GitHub][newton-docs].
-
-> ## More math
->
-> Read through [Newton's documentation][newton-docs]. Try one or more of the
-> other endpoints that we haven't tried. Check that the results match what you
-> would expect.
->
-> Try using a different input function than `x^2-1`. Again, check that the
-> answers give what you expect.
-{: .challenge}
-
-> ## Errors (or not)
->
-> Try using the `simplify` endopint for Newton to simplify the expression
-> `0^(-1)` (i.e. 1 divided by 0).
->
-> Use `curl -i` to see both the headers and the response. Do these match what
-> you expect?
->
->> ## Solution
->>
->> The response code for this request is `200` (OK), but the `"result"`
->indicates that an error occurred.
->>
->> This is not uncommon; not all APIs will use the HTTP status code to indicate
->> an error condition. Some will even give you an HTML web page describing an
->> error condition when usually you would expect a non-HTML response. It's good
->> to check this behaviour for each API that you use, so that you can guard for
->> it in your software.
-> {: .solution} 
-{: .challenge}
-
-
 # Types of APIs
 
 ## REST
 
-REST stands for **REpresentational State Transfer**.  REST is a set of guidelines on how to architect a network-connected software system.  It is not a specification.
+REST stands for **REpresentational State Transfer**.  REST is a set of guidelines on how to architect a network-connected software system.  It is not a specification. 
 
 An API can be called a "REST API" if it conforms to the REST architectural style.
 
@@ -198,11 +113,13 @@ More on constraints:
 * https://restfulapi.net/rest-architectural-constraints/
 
 
-### Methods: GET, POST, DELETE, PUT
+### HTTP Methods: GET, POST, DELETE, PUT
 
-In REST primary data is called a "resource." 
+In REST primary data is called a "resource."  
 
-Methods in REST for accessing and manipulating data:
+REST APIs listen for HTTP methods `GET`, `POST`, `PUT`, and `DELETE`. The type of HTTP method tells the API which action to perform on the resource.
+
+HTTP Methods for accessing and manipulating data (resources):
 
 * **GET**	This method helps in offering read-only access to the server resources. 
 * **POST**	This method is implemented for creating a new resource. 
@@ -214,28 +131,6 @@ Other types of APIs include more methods like PATCH which only updates a portion
 More about RESTful design at: 
 * https://restfulapi.net/rest-api-design-tutorial-with-example/
 * https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
-
-### Resource naming and URIs
-
-Uniform Resource Identifiers (URIs) are used to address resources in REST.
-
-e.g. for dataa about a particular dog:
-`/dog/{dogId}`
-
-e.g. data for a trick a particular dog can do:
-`/dog/{dogId}/trick/{trickId}`
-
-More on REST naming and URI conventions: 
-* https://restfulapi.net/resource-naming/
-* https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
-
-## SOAP
-
-SOAP stands for **Simple Object Access Protocol**.  These were more widely popular before REST gained popularity.
-
-More on REST and SOAP:
-* https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
-* https://en.wikipedia.org/wiki/SOAP
 
 ## CRUD
 
@@ -265,6 +160,37 @@ For example you could have an API request that uses a POST method to Create (C) 
 > ~~~
 > {: .language-bash}
 {: .callout}
+
+## Anatomy of a URL
+
+When fetching data, you’ll often hear the URL referred to as an “endpoint” when talking about APIs. These endpoints allow a client to interact with a server to pass information.  
+
+RESTful architecture includes sending HTTP methods to a URL to get back information from a request.  There are other protocols besides HTTP (SSH, POP,FTP…) but we will focus on HTTP in this lesson since it’s primarily used for communication between web browsers and web servers.
+
+![Anatomy of a URL](https://www.normshield.com/wp-content/uploads/2017/05/example.png)
+More info at:  https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
+
+### Resource naming and URIs
+
+Uniform Resource Identifiers (URIs) are used to address resources in REST using endpoints.
+
+e.g. for data about a particular dog:
+`/dog/{dogId}`
+
+e.g. data for a trick a particular dog can do:
+`/dog/{dogId}/trick/{trickId}`
+
+More on REST naming and URI conventions: 
+* https://restfulapi.net/resource-naming/
+* https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
+
+## SOAP
+
+SOAP stands for **Simple Object Access Protocol**.  These were more widely popular before REST gained popularity.
+
+More on REST and SOAP:
+* https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
+* https://en.wikipedia.org/wiki/SOAP
 
 ## GraphQL
 
