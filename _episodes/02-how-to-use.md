@@ -19,11 +19,12 @@ Let's take a url from the Numbers API
 
 What happens whey you copy and paste that url into a web browser?  
 
-> ### Live Demo:
->
-> Looking at the Random Fox API with browser "developer tools"
-> https://randomfox.ca/floof/
-{: .callout}
+### Live Demo
+
+Let's look at the Random Fox API with a browser's "developer tools" view.
+
+https://randomfox.ca/floof/
+
 
 Did you notice that the type of data returned by the Number's API and Random Fox API looked different? That's right, the content type they returned is different.  
 * **Numbers API** returned: `Content-Type` : `text/plain; charset=utf-8`
@@ -36,18 +37,44 @@ Some APIs will let you ask for a particular type to return data in.  But in any 
 
 You can use `curl` on command line to make requests and get responses.
 
-
-
 ~~~
-curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificnames[]=Gadus%20morha&marine_only=true" -H "accept: */*"
+$ curl http://numbersapi.com/42
 ~~~
 {: .language-bash}
 
 ~~~
-[[{"AphiaID":126436,"url":"http:\/\/marinespecies.org\/aphia.php?p=taxdetails&id=126436","scientificname":"Gadus morhua","authority":"Linnaeus, 1758","status":"accepted","unacceptreason":null,"taxonRankID":220,"rank":"Species","valid_AphiaID":126436,"valid_name":"Gadus morhua","valid_authority":"Linnaeus, 1758","parentNameUsageID":125732,"kingdom":"Animalia","phylum":"Chordata","class":"Actinopteri","order":"Gadiformes","family":"Gadidae","genus":"Gadus","citation":"Froese, R. and D. Pauly. Editors. (2021). FishBase. Gadus morhua Linnaeus, 1758. Accessed through: World Register of Marine Species at: http:\/\/marinespecies.org\/aphia.php?p=taxdetails&id=126436 on 2021-10-19","lsid":"urn:lsid:marinespecies.org:taxname:126436","isMarine":1,"isBrackish":1,"isFreshwater":0,"isTerrestrial":0,"isExtinct":null,"match_type":"near_1","modified":"2008-01-15T17:27:08.177Z"}]]y
+42 is the number of laws of cricket.
 ~~~
 {: .output}
 
+[Numbers API][numbersapi] provides facts about numbers. By putting the number of
+interest into the address, we tell Numbers API which number to give a fact
+about. By adding other keywords to the address, we can refine the domain that
+we're asking for information in; for example, for specifically mathematical
+trivia, we can add `/math`.
+
+~~~
+$ curl http://numbersapi.com/42/math
+~~~
+{: .language-bash}
+
+~~~
+42 is a perfect score on the USA Math Olympiad (USAMO) and International Mathematical Olympiad (IMO).
+~~~
+{: .output}
+
+Numbers API is not an especially sophisticated API. In particular, it only
+offers a single _endpoint_ (specifically, `/`), and each response to a query is
+a single string, provided as plain text.
+
+We can think of an API as being similar to a package or library in a programming
+language, but one that is usable from almost any programming language. In these
+terms, an endpoint is equivalent to a function; Numbers API provides a single
+function, `/`, which gives information about numbers. The response is the return
+value of the function, and in this case is a single string. This maps well onto
+HTTP, as the response body of a request is a string of either characters or of
+bytes. (Byte strings don't translate well between languages, so are usually
+avoided, except for specific portable formats such as images.)
 
 # Excercise: Get a Fact about your birthday
 
