@@ -41,6 +41,22 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 > Pick a method to interact with the numbers API.  Pick a number and make the request.  Then paste the response you get into the workshop collaborative document.
 {: .callout}
 
+
+## Authentication and Access Tokens
+
+Many APIs require you to apply for an "API Key," "OAuth key," or "Personal access token". It's important to keep these keys safe and not share them with any code you share or code you commit to a repository.  It is recommended that you keep these in a separate file or have them as environmental variables.  You can have them directly in your code for a quick test but don't leave them in there when you share or commit your code to a repository!
+
+> tip: If you are using git, you can add the filename of your file containing your keys to the .gitignore file so git won't keep bothering you to commit it!  Here is a great walkthrough from Medium [How To Create A .gitignore File To Hide Your API Keys](https://medium.com/@t.rosen2101/how-to-create-a-gitignore-file-to-hide-your-api-keys-95b3e6692e41) discussing a way to do this with a config.py script and even use it in a jupyter notebook. 
+{: .callout}
+
+> Example: How to get a GitHub API "Personal Access Token"
+>
+> - Visit [GitHub][github] and log in.
+> - In `Settings > Developer Settings > Personal Access Token`,  click on "Generate new token". 
+> - In the options, tick only the "public_repo" option under "repo", write a sensible note, and click on "Generate Token" at the bottom of the page.
+> - Save it into a file, as you will not be able to see it again.  e.g. `github-access-token.txt`. Remember to keep this file safe and don't share it with any code you share, or to delete it after the lesson, as anyone with access to the token can use it to manage your account and repositories.  You can also delete it from the `Settings > Developer Settings > Personal Access Token` page on GitHub, to be 100% sure.
+{: .callout}
+
 ## Languages: Python
 
 ### SDK
