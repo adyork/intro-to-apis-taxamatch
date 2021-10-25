@@ -1,18 +1,5 @@
----
-title: "dicts"
-teaching: 10
-exercises: 5
-questions:
-- "What is a Python `dict`?"
-- "How do I use a `dict`?"
-objectives:
-- "Understand what a `dict` is."
-- "Be able to create, modify, and use `dict`s in Python."
-keypoints:
-- "A `dict` is a collection of key-value pairs."
-- "Create a `dict` with the syntax `{key1: value1, key2: value2, ...}`."
-- "Get and set elements of a `dict` with square brackets: `my_dict[key1] = new_value1`."
----
+
+## Working with dictionaries
 
 In the previous episode we saw that some APIs will return data formatted as
 JSON, including names (or _keys_) and values associated with them.
