@@ -133,6 +133,8 @@ Below is a table showing different HTTP Status Code ranges and their meanings:
 
 Most commonly you will encounter 200 "Success" but it's important to check for status codes and handle errors when developing with APIs.  You want to tell your code what to do when it can't get data.
 
+More on Status codes: [https://restfulapi.net/http-status-codes/](https://restfulapi.net/http-status-codes/)
+
 ### HTTP Methods: GET, POST, DELETE, PUT
 
 In REST primary data is called a "resource."  
@@ -198,7 +200,7 @@ When fetching data, you’ll often hear the URL referred to as an “endpoint”
 RESTful architecture includes sending HTTP methods to a URL to get back information from a request.  There are other protocols besides HTTP (SSH, POP,FTP…) but we will focus on HTTP in this lesson since it’s primarily used for communication between web browsers and web servers.
 
 ![Anatomy of a URL](https://www.normshield.com/wp-content/uploads/2017/05/example.png)
-More info at:  https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
+More info at:  [https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html](https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html)
 
 
 ### Resource naming and URIs
@@ -223,8 +225,8 @@ Notice that endpoints use nouns not verbs.  The HTTP method will dictate the act
 SOAP stands for **Simple Object Access Protocol**.  These were more widely popular before REST gained popularity.
 
 More on REST and SOAP:
-* https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/
-* https://en.wikipedia.org/wiki/SOAP
+* [https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/](https://www.geeksforgeeks.org/difference-between-rest-api-and-soap-api/)
+* [https://en.wikipedia.org/wiki/SOAP](https://en.wikipedia.org/wiki/SOAP)
 
 ## GraphQL
 
