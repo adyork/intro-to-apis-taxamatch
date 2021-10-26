@@ -1,7 +1,7 @@
 ---
 title: How can I use an API?
-teaching: 30
-exercises: 15
+teaching: 40
+exercises: 10
 questions:
 - How can I use APIs and where?
 objectives:
