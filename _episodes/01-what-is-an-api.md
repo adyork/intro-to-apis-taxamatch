@@ -157,7 +157,7 @@ For example you could have an API request that uses a POST method to Create (C) 
 >
 > Find an existing API. Do a quick web search for anything +"API"
 > 
-> If you can't find one you can use the PokeAPI (https://pokeapi.co/)[https://pokeapi.co/]
+> If you can't find one you can use the (PokeAPI)[https://pokeapi.co/]
 > 
 > * Notice if it says whether the API is a REST API or is "RESTful"
 > 
@@ -185,6 +185,19 @@ RESTful architecture includes sending HTTP methods to a URL to get back informat
 More info at:  [https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html](https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html)
 
 This is the anatomy of a URL but REST has significant meaning for parts of a URL.
+
+For example, this URL from the (PokeAPI)[https://pokeapi.co/]
+
+`https://pokeapi.co/api/v2/pokemon/pikachu`
+
+* the protocol is `https://`
+* the domain is `pokeapi.co`
+* the path is `api/v2/pokemon/pikachu`
+
+You can have parameters in a query string too: 
+
+`https://pokeapi.co/api/v2/pokemon/pikachu?limit=5&offset=20`
+* query string  '?limit=20&offset=20'
 
 ### Resource naming and URIs
 
