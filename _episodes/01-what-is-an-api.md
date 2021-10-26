@@ -18,6 +18,8 @@ API stands for **Application Programming Interface**.  APIs are the glue that ho
 
 There are APIs that can be used over the web, directly between local devices, or just between different code all on your computer.  It can be written in any language, and may use a number of protocols.  All that sounds very nebulous.  But at the heart of it, APIs are that versitile.  It's the specific implementations that do particular things that narrow the scope. Before we get down to the details, let's look at a restaurant concept example.
 
+![restaurant as an API]('../fig/resturant_api.png`)
+
 > ### Concept: Restaurant as an API
 > * You request an item listed the menu.  
 > * Your order is recieved by the kitchen.
@@ -183,7 +185,6 @@ RESTful architecture includes sending HTTP methods to a URL to get back informat
 ![Anatomy of a URL](https://www.normshield.com/wp-content/uploads/2017/05/example.png)
 More info at:  [https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html](https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html)
 
-![restaurant as an API]('../fig/resturant_api.png`)
 This is the anatomy of a URL but REST has significant meaning for parts of a URL.
 
 For example, this URL from the [PokeAPI](https://pokeapi.co/)
