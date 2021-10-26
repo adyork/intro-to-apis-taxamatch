@@ -1,6 +1,4 @@
-## Lesson Title
-
-Intro to APIs: Case study to match taxonomic names in Python
+## Intro to APIs: Case study to match taxonomic names in Python
 
 Go to the lesson site to view the lesson: [https://adyork.github.io/intro-to-apis-taxamatch](https://adyork.github.io/intro-to-apis-taxamatch)
 
