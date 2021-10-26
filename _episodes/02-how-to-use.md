@@ -7,8 +7,8 @@ questions:
 objectives:
 - Take a look at a variety of ways to make responses and get requests.
 keypoints:
-- There are lots of ways to use an api, it can be very versitile.  We covered a few but there are more!
-- Making requests on command line, web broswer, any programming language, postman,...
+- There are lots of ways to use an api, it can be very versatile.  We covered a few but there are more!
+- Making requests on command line, web browser, any programming language, postman,...
 - Software development kits (SDK) provide added support for different programming languages.
 ---
 
