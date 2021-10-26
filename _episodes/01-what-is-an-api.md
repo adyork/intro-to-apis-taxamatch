@@ -80,7 +80,7 @@ REST Constraints:
 
 1. Uniform interface
 2. Client–server
-3. Stateless
+3. Stateless (the server does not store any information about your session)
 4. Cacheable
 5. Layered system
 6. Code on demand (optional)
@@ -174,13 +174,14 @@ For example you could have an API request that uses a POST method to Create (C) 
 
 ## Anatomy of a URL
 
-When fetching data, you’ll often hear the URL referred to as an “endpoint” when talking about APIs. These endpoints allow a client to interact with a server to pass information.  
+When fetching data, you’ll often hear the URL referred to as an “endpoint” when talking about APIs. These endpoints allow a client to interact with a server to pass information.   The endpoint is a URL is where the server is listening for your request.
 
 RESTful architecture includes sending HTTP methods to a URL to get back information from a request.  There are other protocols besides HTTP (SSH, POP,FTP…) but we will focus on HTTP in this lesson since it’s primarily used for communication between web browsers and web servers.
 
 ![Anatomy of a URL](https://www.normshield.com/wp-content/uploads/2017/05/example.png)
 More info at:  [https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html](https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html)
 
+This is the anatomy of a URL but REST has significant meaning for parts of a URL.
 
 ### Resource naming and URIs
 
@@ -250,4 +251,24 @@ Featured highlights:
 ![graphql_example](../fig/graphql.png)
 
 GraphQL does not consider themselves a replacement for REST but an alternative.  You can also implement both by wrapping an existing REST API.  You will see many APIs provide documentation and examples for using GraphQL in addition to REST.
+
+## Other Parts of Requests
+
+Headers: The additional details provided for communication between client and server. Some of the common headers are:
+
+### Request
+
+* host: the IP of client (or from where request originated)
+* accept-language: language understandable by the client
+* user-agent: data about client, operating system and vendor
+
+### Response
+
+* status: the status of request or HTTP code.
+* content-type: type of resource sent by server.
+* set-cookie: sets cookies by server
+
+### Data: (also called body or message)
+
+Contains info you want to send to the server.
 
