@@ -84,6 +84,23 @@ $ curl http://numbersapi.com/42/math
 {: .challenge}
 
 
+## More complicated queries, params with curl
+
+Thus far we have queried APIs where any parameters are included as part of the
+effective "filename" on the server. For example, in `http://numbersapi.com/42`,
+the `42` is a parameter to the API, but at first glance it could equally well be
+an endpoint.
+
+Many APIs make this distinction more clear, by accepting arguments in a _query
+string_. This is a sequence of `name=value` pairs, separated from each other by
+`&`s, and separated from the endpoint by a `?`. 
+
+~~~
+## Using quotes with Curl
+When we put an & into a web address for Curl we need to put it inside quotes. If we don't then our shell will interpret them as meaning we should run the preceeding command in the background instead of passing it as a parameter to curl. This will effectively truncate the address to everything up to the first &.
+~~~
+{: .callout}
+
 # Languages: Python
 
 Let's look at an example of making an API call to the Random Fox API using python's `requests` library.
