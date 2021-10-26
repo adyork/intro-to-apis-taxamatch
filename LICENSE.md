@@ -5,6 +5,9 @@ root: .
 ---
 ## Instructional Material
 
+This lesson and all Software and materials are made available under the [Creative Commons Attribution license][cc-by-human] . The following is a human-readable summary of
+(and not a substitute for) the [full legal text of the CC BY 4.0 license][cc-by-legal].
+
 > This lesson was constructed in part with a template derived from work that is Copyright © Software Carpentry (http://software-carpentry.org/).  
 > 
 > Portions were copied and adapted from alpha-lesson "Introduction to the Web and Online APIs"
@@ -17,12 +20,6 @@ root: .
 > Graphic "fig/resturant_api.png" was constructed using content from the nouns project https://thenounproject.com/ using a royalty-free license.
 > 
 > BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
-
-This lesson and all Software and materials are
-made available under the [Creative Commons Attribution
-license][cc-by-human] . The following is a human-readable summary of
-(and not a substitute for) the [full legal text of the CC BY 4.0
-license][cc-by-legal].
 
 You are free:
 
