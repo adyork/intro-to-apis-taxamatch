@@ -19,6 +19,9 @@ Let's take a url from the [Numbers API](http://numbersapi.com)
 
 What happens whey you copy and paste that url into a web browser?  
 
+[How to access developertools in firefox](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
+[How to access developertools in chrome](https://developer.chrome.com/docs/devtools/open/)
+
 ### Live Demo
 
 Let's look at the Random Fox API with a browser's "developer tools" view.
