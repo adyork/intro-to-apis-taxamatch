@@ -64,32 +64,7 @@ $ curl http://numbersapi.com/42
 
 [Numbers API][numbersapi] provides facts about numbers. By putting the number of
 interest into the address, we tell Numbers API which number to give a fact
-about. By adding other keywords to the address, we can refine the domain that
-we're asking for information in; for example, for specifically mathematical
-trivia, we can add `/math`.
-
-~~~
-$ curl http://numbersapi.com/42/math
-~~~
-{: .language-bash}
-
-~~~
-42 is a perfect score on the USA Math Olympiad (USAMO) and International Mathematical Olympiad (IMO).
-~~~
-{: .output}
-
-Numbers API is not an especially sophisticated API. In particular, it only
-offers a single _endpoint_ (specifically, `/`), and each response to a query is
-a single string, provided as plain text.
-
-We can think of an API as being similar to a package or library in a programming
-language, but one that is usable from almost any programming language. In these
-terms, an endpoint is equivalent to a function; Numbers API provides a single
-function, `/`, which gives information about numbers. The response is the return
-value of the function, and in this case is a single string. This maps well onto
-HTTP, as the response body of a request is a string of either characters or of
-bytes. (Byte strings don't translate well between languages, so are usually
-avoided, except for specific portable formats such as images.)
+about. 
 
 # Types of APIs
 
@@ -219,6 +194,34 @@ e.g. endpoint for data for a trick a particular dog can do:
 Notice that name collections with have plural nouns (e.g. dogs vs dog)
 
 Notice that endpoints use nouns not verbs.  The HTTP method will dictate the action so instead of `/createDog` the endpoint would be '/dog' and the HTTP method used like 'POST' will dictate if a new dog should be created.
+
+Remember the Numbers API? Which we made a call to `http://numbersapi.com/42`?
+
+By adding other keywords to the address, we can refine the domain that
+we're asking for information in; for example, for specifically mathematical
+trivia, we can add `/math`.
+
+~~~
+$ curl http://numbersapi.com/42/math
+~~~
+{: .language-bash}
+
+~~~
+42 is a perfect score on the USA Math Olympiad (USAMO) and International Mathematical Olympiad (IMO).
+~~~
+{: .output}
+
+Numbers API is not an especially sophisticated API. In particular, it only
+offers a single _endpoint_ (specifically, `/`), and each response to a query is
+a single string, provided as plain text.
+
+We can think of an API as being similar to a package or library in a programming
+language, but one that is usable from almost any programming language. In these
+terms, an endpoint is equivalent to a function; Numbers API provides a single
+function, `/`, which gives information about numbers. The response is the return
+value of the function, and in this case is a single string. This maps well onto
+HTTP, as the response body of a request is a string of either characters or of
+bytes.
 
 ## SOAP
 
