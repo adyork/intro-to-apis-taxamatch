@@ -10,6 +10,10 @@ This lesson was constructed in part with a template derived from work that is Co
 Portions were copied and adapted from alpha-lesson "Introduction to the Web and Online APIs"
 * https://edbennett.github.io/web-novice/ and https://colinsauze.github.io/web-novice/
 
+Content was also used from https://github.com/freeCodeCamp/freeCodeCamp (Copyright (c) 2021, freeCodeCamp.) which was made available under "BSD 3-Clause License."
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 This lesson and all Software and materials are
 made available under the [Creative Commons Attribution
 license][cc-by-human] . The following is a human-readable summary of
