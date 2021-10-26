@@ -1,7 +1,7 @@
 ---
 title: Working in Python
 teaching: 30
-exercises: 15
+exercises: 10
 questions:
 - What does it look like to make API requests in python and work with data in the responses?  
 objectives:
