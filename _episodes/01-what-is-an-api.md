@@ -117,6 +117,7 @@ More about RESTful design at:
 * https://restfulapi.net/rest-api-design-tutorial-with-example/
 * https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
 * https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
+* [Roy Thomas Fielding's Dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
 ### HTTP Status Codes
 
