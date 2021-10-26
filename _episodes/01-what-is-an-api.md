@@ -16,7 +16,7 @@ keypoints:
 
 API stands for **Application Programming Interface**.  APIs are the glue that hold the technology universe together.  They are a communication tool that can be used to pass information to and from different kinds of devices and hardware through requests and responses.  
 
-There are APIs that can be used over the web, directly between local devices, or just between different code all on your computer.  It can be written in any language, and may use a number of protocols.  All that sounds very nebulous.  But at the heart of it, APIs are that versitile.  It's the specific implementations that do particular things that narrow the scope. Before we get down to the details, let's look at a restaurant concept example.
+There are APIs that can be used over the web, directly between local devices, or just between different code all on your computer.  It can be written in any language, and may use a number of protocols.  All that sounds very nebulous.  But at the heart of it, APIs are that versatile.  It's the specific implementations that do particular things that narrow the scope. Before we get down to the details, let's look at a restaurant concept example.
 
 ![restaurant as an API](../fig/resturant_api.png)
 
@@ -24,7 +24,7 @@ There are APIs that can be used over the web, directly between local devices, or
 > * You request an item listed the menu.  
 > * Your order is received by the kitchen.
 > * The kitchen performs all kinds of operations needed to make your food.
-> * Then then you get a response.  Your food is either delivered to your table or you get no food if they couldn't make your request. They can't make your food if you ordered something that isn't on the menu, you didn't ask for it correctly, or if equiptement failure prevented them from making your requested item.
+> * Then then you get a response.  Your food is either delivered to your table or you get no food if they couldn't make your request. They can't make your food if you ordered something that isn't on the menu, you didn't ask for it correctly, or if equipment failure prevented them from making your requested item.
 >
 > API requests have to be made in specific ways so **referring to Documentation** is very important.
 {: .callout}
