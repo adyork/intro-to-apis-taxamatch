@@ -55,7 +55,7 @@ $ curl http://numbersapi.com/42/math
 > * Paste the response you get into the workshop chat.
 >
 > > ## Answer
-> > If your birthday is November 13th, pasete URL `http://numbersapi.com/11/13/date` into a web browser.
+> > If your birthday is November 13th, paste URL `http://numbersapi.com/11/13/date` into a web browser.
 > > 
 > > Returned random fact: "November 13th is the day in 1851 that the Denny Party lands at Alki Point, before moving to the other side of Elliot Bay to what would become Seattle, Washington."
 > > 
@@ -88,7 +88,7 @@ $ curl http://numbersapi.com/42/math
 
 Let's look at an example of making an API call to the Random Fox API using python's `requests` library.
 
-You can follow along in this python notebook: https://gist.github.com/adyork/1219915286eafa4cefa0122ea98d28dc
+You can follow along in this python notebook: [https://gist.github.com/adyork/1219915286eafa4cefa0122ea98d28dc](https://gist.github.com/adyork/1219915286eafa4cefa0122ea98d28dc)
 
 You can also click the "Open in Colab" badge at the top to run the notebook.  You can make are run changes in colab without affecting our workshop example.
 
