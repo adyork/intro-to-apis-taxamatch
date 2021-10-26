@@ -21,7 +21,7 @@ Let's go through another example using the ERDDAP API to get a data table as csv
 
 ## Example with ERRDAP: json to data frame
 
-Let's go through another example using the ERDDAP API to get the same data as the last example. Except this time we will revieve the data as json and get it into a data frame.
+Let's go through another example using the ERDDAP API to get the same data as the last example. Except this time we will review the data as json and get it into a data frame.
 
 [Example notebook link](https://gist.github.com/adyork/1a4840324f8ce7e48b018cde5f44e836)
 
