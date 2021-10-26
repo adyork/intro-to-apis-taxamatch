@@ -14,7 +14,7 @@ keypoints:
 
 # A web browser
 
-Let's take a url from the [Numbers API](http://numbersapi.com)
+Let's take a url from the [Numbers API](https://numbersapi.com/#42)
 `http://numbersapi.com/42`
 
 What happens whey you copy and paste that url into a web browser?  
@@ -52,7 +52,7 @@ $ curl http://numbersapi.com/42/math
 
 # Excercise: Get a Fact about your birthday
 
-> * Look at the [Numbers API documenation](https://numbersapi.com/).  
+> * Look at the [Numbers API documentation](https://numbersapi.com/#42).  
 > * Pick a method to interact with the numbers API (browser, command line, etc).  
 > * Make a request to the Numbers API.
 > * Paste the response you get into the workshop chat.
@@ -241,4 +241,4 @@ service, including examples.
 [nasa-api]: https://api.nasa.gov
 [newton]: https://newton.now.sh
 [newton-docs]: https://github.com/aunyks/newton-api
-[numbersapi]: http://numbersapi.com
+[numbersapi]: http://numbersapi.com/#42
