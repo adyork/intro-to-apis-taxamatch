@@ -19,7 +19,6 @@ API stands for **Application Programming Interface**.  APIs are the glue that ho
 There are APIs that can be used over the web, directly between local devices, or just between different code all on your computer.  It can be written in any language, and may use a number of protocols.  All that sounds very nebulous.  But at the heart of it, APIs are that versitile.  It's the specific implementations that do particular things that narrow the scope. Before we get down to the details, let's look at a restaurant concept example.
 
 > ### Concept: Restaurant as an API
-> 
 > * You request an item listed the menu.  
 > * Your order is recieved by the kitchen.
 > * The kitchen performs all kinds of operations needed to make your food.
