@@ -28,8 +28,7 @@ There are APIs that can be used over the web, directly between local devices, or
 > API requests have to be made in specific ways so **referring to Documentation** is very important.
 {: .callout}
 
-APIs provide an abstraction layer that spares you the details of a database or server implementation when all you want is to work with information.  For example, say you want the latest red sox scores.  You don't want to know how MLB stores that information in their database, what kind of database it is, or how it is managed.  You just want the information.  In fact, MLB probably doesn't want you mucking around in their database to begin with!  
-MLB API: https://appac.github.io/mlb-data-api-docs/
+APIs provide an abstraction layer that spares you the details of a database or server implementation when all you want is to work with information.  For example, say you want the latest red sox scores.  You don't want to know how MLB stores that information in their database, what kind of database it is, or how it is managed.  You just want the information.  In fact, [MLB API](https://appac.github.io/mlb-data-api-docs/) probably doesn't want you mucking around in their database to begin with!  
 
 And for APIs that do want you to provide data to them (e.g. [Twitter's API](https://developer.twitter.com/en/docs/twitter-api)), they can require authentication and put limitations on use like limiting the rate you can hit the API.
 
@@ -46,7 +45,7 @@ But APIs are not just for the web!  APIs to communicate with device hardware is 
 If you are a mobile app developer you use APIs all the time to communicate with hardware like the camera, gps, etc. But also, APIs can accelerate development time and make your code simpler by provide helper code.  
 
 For example, if developing a camera app you don't want to write a click handler or the intricacies of the camera hardware. You just want to write code that takes a picture and automatically adds funny emojis to it when you press that button. 
-e.g. existing code "android:onClick" and the Android Camera API https://developer.android.com/guide/topics/media/camera
+e.g. existing code "android:onClick" and the Android Camera API [https://developer.android.com/guide/topics/media/camera](https://developer.android.com/guide/topics/media/camera)
 
 Libraries and Frameworks can also be APIs that provide helper code for other code.
 
@@ -86,12 +85,12 @@ REST Constraints:
 6. Code on demand (optional)
 
 More on constraints: 
-* https://restfulapi.net/rest-architectural-constraints/
+* [https://restfulapi.net/rest-architectural-constraints/](https://restfulapi.net/rest-architectural-constraints/)
 
 More about RESTful design at: 
-* https://restfulapi.net/rest-api-design-tutorial-with-example/
-* https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
-* https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
+* [https://restfulapi.net/rest-api-design-tutorial-with-example/](https://restfulapi.net/rest-api-design-tutorial-with-example/)
+* [https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html](https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html)
+* [https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/](https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/)
 * [Roy Thomas Fielding's Dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
 ### HTTP Status Codes
@@ -137,7 +136,7 @@ For example you could have an API request that uses a POST method to Create (C) 
 
 > Example:
 >
-> Facebook has an API that let's you do CRUD operations on messages: https://developers.facebook.com/docs/whatsapp/api/messages (requires Authorization).
+> Facebook has an API that let's you do CRUD operations on messages: `https://developers.facebook.com/docs/whatsapp/api/messages` (requires Authorization).
 > Using that API you make a **POST** call **CREATE** content that is sent as a message (e.g. text, message templates, images, documents and audio).
 > 
 > ~~~
@@ -275,4 +274,3 @@ Headers: The additional details provided for communication between client and se
 ### Data: (also called body or message)
 
 Contains info you want to send to the server.
-
