@@ -1,6 +1,14 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5601476.svg)](https://doi.org/10.5281/zenodo.5601476)
+
 ## Intro to APIs: Case study to match taxonomic names in Python
 
 Go to the lesson site to view this lesson: [https://adyork.github.io/intro-to-apis-taxamatch](https://adyork.github.io/intro-to-apis-taxamatch)
+
+## CITATION
+
+Please cite as: 
+
+> Amber York. (2021, October 26). adyork/intro-to-apis-taxamatch: Intro to APIs: Case study to match taxonomic names in Python. Zenodo. https://doi.org/10.5281/zenodo.5601476
 
 ## Lesson style and template
 
