@@ -231,7 +231,9 @@ Green tea contains 28 mg of caffeine per serving
 {: .challenge}
 
 
+## Deeper dive on working in Python
 
+See (Introduction to the Web and Online APIs: Requests)[https://edbennett.github.io/web-novice/04-requests/index.html]
 
 [advanced-requests]: https://requests.readthedocs.io/en/master/user/advanced/
 [metoffice-api-reference]: https://www.metoffice.gov.uk/services/data/datapoint/api-reference
