@@ -7,7 +7,7 @@ questions:
 keypoints:
 - API stands for "Application Programming Interface"
 - APIs can be implemented in a variety of ways not just over "the web."
-- APIs use requests and responses to send and recieve data.
+- APIs use requests and responses to send and receive data.
 - APIs can be designed differently but there are special types like REST that conform to certain conditions.
 
 ---
@@ -22,7 +22,7 @@ There are APIs that can be used over the web, directly between local devices, or
 
 > ### Concept: Restaurant as an API
 > * You request an item listed the menu.  
-> * Your order is recieved by the kitchen.
+> * Your order is received by the kitchen.
 > * The kitchen performs all kinds of operations needed to make your food.
 > * Then then you get a response.  Your food is either delivered to your table or you get no food if they couldn't make your request. They can't make your food if you ordered something that isn't on the menu, you didn't ask for it correctly, or if equiptement failure prevented them from making your requested item.
 >
