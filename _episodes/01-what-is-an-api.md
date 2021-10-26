@@ -155,12 +155,16 @@ For example you could have an API request that uses a POST method to Create (C) 
 {: .callout}
 
 ## Excercise: Find an example API URL and its HTTP method
-
+>
 > Find an existing API. Do a quick web search for anything +"API"
+> 
 > If you can't find one you can use the PokeAPI (https://pokeapi.co/)[https://pokeapi.co/]
+> 
 > * Notice if it says whether the API is a REST API or is "RESTful"
+> 
 > 1) Paste an example URL in our workshop chat
 > 2) Can you find where it says the HTTP method (e.g. GET, POST, PUT, DELETE)
+> 
 > > ## Answer
 > > example URL `https://pokeapi.co/api/v2/pokemon/{id or name}/`
 > > example URL `https://pokeapi.co/api/v2/pokemon/pikachu`
