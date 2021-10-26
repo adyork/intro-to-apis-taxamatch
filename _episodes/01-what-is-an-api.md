@@ -62,7 +62,7 @@ $ curl http://numbersapi.com/42
 ~~~
 {: .output}
 
-[Numbers API][numbersapi] provides facts about numbers. By putting the number of
+[Numbers API](https://numbersapi.com/#42) provides facts about numbers. By putting the number of
 interest into the address, we tell Numbers API which number to give a fact
 about. 
 
@@ -217,7 +217,7 @@ Notice that name collections with have plural nouns (e.g. dogs vs dog)
 
 Notice that endpoints use nouns not verbs.  The HTTP method will dictate the action so instead of `/createDog` the endpoint would be '/dog' and the HTTP method used like 'POST' will dictate if a new dog should be created.
 
-Remember the Numbers API? Which we made a call to `http://numbersapi.com/42`?
+Remember the [Numbers API](https://numbersapi.com/#42)? Which we made a call to `http://numbersapi.com/42`?
 
 By adding other keywords to the address, we can refine the domain that
 we're asking for information in; for example, for specifically mathematical
