@@ -50,7 +50,7 @@ e.g. existing code "android:onClick" and the Android Camera API https://develope
 
 Libraries and Frameworks can also be APIs that provide helper code for other code.
 
-## Examine an API
+## Simple API
 
 ~~~
 $ curl http://numbersapi.com/42
@@ -163,11 +163,15 @@ For example you could have an API request that uses a POST method to Create (C) 
 > * Notice if it says whether the API is a REST API or is "RESTful"
 > 
 > 1) Paste an example URL in our workshop chat
+>
 > 2) Can you find where it says the HTTP method (e.g. GET, POST, PUT, DELETE)
 > 
 > > ## Answer
+> >
 > > example URL `https://pokeapi.co/api/v2/pokemon/{id or name}/`
+> >
 > > example URL `https://pokeapi.co/api/v2/pokemon/pikachu`
+> >
 > > * The documentation said these were both "GET" requests since in the documentation they were `GET https://pokeapi.co/api/v2/pokemon/{id or name}/`
 > {: .solution}
 {: .challenge}
