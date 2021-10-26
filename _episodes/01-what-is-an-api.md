@@ -130,10 +130,10 @@ Other types of APIs include more methods like PATCH which only updates a portion
 While not an API itself, people sometimes use this term in conversation about APIs.  It stands for Create, Read, Update, and Delete.  It's terminology to describe types of operations that manipulating information in your database or data storage.
 
 For example you could have an API request that uses a POST method to Create (C) data in your server's database.
-* **GET**	 is the R in CRUD.  
-* **POST**	 is the C in CRUD. 
-* **PUT**	 is the U in CRUD.
-* **DELETE**	is the D in CRUD.
+* **Create** is the C in CRUD and corresponds to the **POST**	method. 
+* **Read**	 is the R in CRUD  and corresponds to the **GET**	method.  
+* **Update**  is the U in CRUD and corresponds to the  **PUT** method. 
+* **Delete**	is the D in CRUD and corresponds to the **DELETE**	method. 
 
 > Example:
 >
@@ -154,7 +154,7 @@ For example you could have an API request that uses a POST method to Create (C) 
 > {: .language-bash}
 {: .callout}
 
-## Excercise: Find an example API URL and its HTTP method
+## Exercise: Find an example API URL and its HTTP method
 >
 > Find an existing API. Do a quick web search for anything +"API"
 > 
