@@ -35,10 +35,11 @@ And for APIs that do want you to provide data to them (e.g. [Twitter's API](http
 
 > Tip: **Finding APIs**. With so many APIs out there how do you find what you are looking for? It is sometimes as easy as a web search using "API" in your keywords.  But there are other resources too like [ProgrammableWeb's API Directory](https://www.programmableweb.com/category/all/apis).
 
+The web made up of APIs.  In fact, every time you look at a web page you are making a request to a server and you are getting back HTML content displayed to you in your web client (e.g. Chrome, Firefox).  An API isn’t the same as the remote server, it is the part of the server that receives requests and sends responses.
+
+In this workshop we will be focusing on web APIs that involve making requests and responses over the internet using HTTP.
 
 ## APIs are more than just the "web"
-
-In this workshop we will be focusing on web APIs that involve making requests and responses over the internet using HTTP.  
 
 But APIs are not just for the web!  APIs to communicate with device hardware is also very common.  
 
@@ -183,6 +184,21 @@ RESTful architecture includes sending HTTP methods to a URL to get back informat
 
 ![Anatomy of a URL](https://www.normshield.com/wp-content/uploads/2017/05/example.png)
 More info at:  https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
+
+## Excercise: Find an API
+
+> Find an existing API. Do a quick web search for anything +"API"
+> If you can't find one you can use the PokeAPI (https://pokeapi.co/)[https://pokeapi.co/]
+> * Notice if it says whether the API is a REST API or is "RESTful"
+> 1) Paste an example URL in our workshop chat
+> 2) 
+> > ## Answer
+> > example URL `https://pokeapi.co/api/v2/pokemon/{id or name}/`
+> > example URL `https://pokeapi.co/api/v2/pokemon/pikachu`
+> > * The documentation said these were both "GET" requests since in the documentation they were `GET https://pokeapi.co/api/v2/pokemon/{id or name}/`
+> {: .solution}
+{: .challenge}
+
 
 ### Resource naming and URIs
 
