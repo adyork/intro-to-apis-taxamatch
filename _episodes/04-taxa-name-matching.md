@@ -31,10 +31,10 @@ curl -X GET "http://marinespecies.org/rest/AphiaRecordsByMatchNames?scientificna
 
 Live coding session name matching 'Gadus morha' which is a typo in the species name for Cod fish [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436)
 
-https://gist.github.com/adyork/a9ce6eba7f70ca525c2981a685cd0ff0
+[link to notebook gist](https://gist.github.com/adyork/a9ce6eba7f70ca525c2981a685cd0ff0)
 
 ## Let's get more complex
 
 How might we use an API call to match a whole list of species names and add them to a data table? 
 
-https://gist.github.com/adyork/9d556ea3c10193edb02516e5138cfb16
+[link to notebook gist](https://gist.github.com/adyork/5983a1ed9763ffb37fb7cd15df24e895#file-match_names_gnrd-ipynb)
