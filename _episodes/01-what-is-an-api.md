@@ -96,7 +96,9 @@ avoided, except for specific portable formats such as images.)
 
 REST stands for **REpresentational State Transfer**.  REST is a set of guidelines on how to architect a network-connected software system.  It is not a specification. 
 
-An API can be called a "REST API" if it conforms to the REST architectural style.
+An API can be called a "REST API" if it conforms to the REST architectural style. 
+
+A REST API is a medium for two computers to communicate over HTTP (Hypertext Transfer Protocol), in the same way clients and servers communicate.
 
 REST Constraints:
 
@@ -114,6 +116,20 @@ More about RESTful design at:
 * https://restfulapi.net/rest-api-design-tutorial-with-example/
 * https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
 * https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/
+
+### HTTP Status Codes
+
+Because REST (and most other APIs you will be using) use HTTP protocol, you will be getting an HTTP status code in response to your request.
+
+Below is a table showing different HTTP Status Code ranges and their meanings:
+
+|STATUS|CODE|RANGE|MEANING|
+|100 – 199|Informational Responses.|For example, 102 indicates the resource is being processed|
+|300 – 399|Redirects|For example, 301 means Moved permanently|
+|400 – 499|Client-side errors|400 means bad request and 404 means resource not found|
+|500 – 599|Server-side errors|For example, 500 means an internal server error|
+
+Most commonly you will encounter 200 "Success" but it's important to check for status codes and handle errors when developing with APIs.  You want to tell your code what to do when it can't get data.
 
 ### HTTP Methods: GET, POST, DELETE, PUT
 
