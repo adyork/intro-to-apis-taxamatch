@@ -14,7 +14,7 @@ keypoints:
 
 # A web browser
 
-Let's take a url from the Numbers API 
+Let's take a url from the [Numbers API](http://numbersapi.com)
 `http://numbersapi.com/42`
 
 What happens whey you copy and paste that url into a web browser?  
