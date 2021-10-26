@@ -176,6 +176,20 @@ For example you could have an API request that uses a POST method to Create (C) 
 > {: .language-bash}
 {: .callout}
 
+## Excercise: Find an example API URL and its HTTP method
+
+> Find an existing API. Do a quick web search for anything +"API"
+> If you can't find one you can use the PokeAPI (https://pokeapi.co/)[https://pokeapi.co/]
+> * Notice if it says whether the API is a REST API or is "RESTful"
+> 1) Paste an example URL in our workshop chat
+> 2) Can you find where it says the HTTP method (e.g. GET, POST, PUT, DELETE)
+> > ## Answer
+> > example URL `https://pokeapi.co/api/v2/pokemon/{id or name}/`
+> > example URL `https://pokeapi.co/api/v2/pokemon/pikachu`
+> > * The documentation said these were both "GET" requests since in the documentation they were `GET https://pokeapi.co/api/v2/pokemon/{id or name}/`
+> {: .solution}
+{: .challenge}
+
 ## Anatomy of a URL
 
 When fetching data, you’ll often hear the URL referred to as an “endpoint” when talking about APIs. These endpoints allow a client to interact with a server to pass information.  
@@ -184,20 +198,6 @@ RESTful architecture includes sending HTTP methods to a URL to get back informat
 
 ![Anatomy of a URL](https://www.normshield.com/wp-content/uploads/2017/05/example.png)
 More info at:  https://frontend.turing.edu/lessons/module-3/rest-architecture-and-urls.html
-
-## Excercise: Find an API
-
-> Find an existing API. Do a quick web search for anything +"API"
-> If you can't find one you can use the PokeAPI (https://pokeapi.co/)[https://pokeapi.co/]
-> * Notice if it says whether the API is a REST API or is "RESTful"
-> 1) Paste an example URL in our workshop chat
-> 2) 
-> > ## Answer
-> > example URL `https://pokeapi.co/api/v2/pokemon/{id or name}/`
-> > example URL `https://pokeapi.co/api/v2/pokemon/pikachu`
-> > * The documentation said these were both "GET" requests since in the documentation they were `GET https://pokeapi.co/api/v2/pokemon/{id or name}/`
-> {: .solution}
-{: .challenge}
 
 
 ### Resource naming and URIs
