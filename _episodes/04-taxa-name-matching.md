@@ -13,7 +13,7 @@ keypoints:
 
 The endpoints an API offers, and what format it will give its responses in, will generally be listed in the API's documentation. 
 
-For example, the World Register of Marine Species REST API: http://marinespecies.org/rest/
+For example, the World Register of Marine Species REST API: [http://marinespecies.org/rest/]
 
 Example: 
 
